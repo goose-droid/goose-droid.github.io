@@ -1,0 +1,187 @@
+/*all pages*/
+
+body {
+   margin:0;
+   background-color:#efe8e2;
+   color:#2E472E;
+   min-width:800px; /* this keeps the text from displaying on top of the images when browser window is narrow. adds a horizontal scrollbar which is not user friendly but preserves the two column layout. ref. p 191*/
+   padding:0;
+   display:flex;
+   flex-direction:column;
+   height:100vh;
+}
+
+main {
+    flex:1;
+}
+
+/*all pages -- header */
+
+header{
+    background-image:url(hip-square.webp);
+    margin:0;
+    padding: 1em;
+}
+header h1 {
+    color:#2E2E47;
+    font-family: "Abril Fatface", "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 250%;
+    margin:0;
+}
+
+/*all pages -- navigation */
+
+nav {
+    background-color: #2e472e;
+    background-image: linear-gradient(to right, #2E472E, hsl(240, 21%, 23%));
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display:flex;
+    justify-content: start;
+}
+nav a {
+    text-decoration:none;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #2E472E;
+    color: #e4cbd2;
+    margin-left:1em;
+    margin-right:1em;
+    font-size:1.1em;
+    padding:5px 1em 5px;
+    border-radius: 10px;
+    transition:  background-color 2s ease-out, color 2s ease-out;
+}
+nav a:hover {
+    background-color: #0a0f0a;
+    color:#ffffff;
+}
+
+
+/*all pages -- article*/
+
+article {
+    padding: 1em;
+    overflow: auto;
+    /*margin-right: 800px;*/ /*decided to make gallery width flexible according to the width of the browser window instead, using % width.*/
+}
+article h3 {
+    color: #2E2E47;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size:1.5em;
+}
+article p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*all pages -- gallery*/
+
+#gallery {
+    float:right;
+    display:flex;
+    flex-wrap: wrap;
+    /*max-width:800px;*/
+    width:50%;
+    justify-content: space-around;
+}
+figure {
+    padding:0;
+    margin:15px; /*wanted images closer together than default to keep gallery column roughly the same height as text column when shrinking browser window.*/
+}
+figcaption {
+    font-style:italic;
+}
+
+/*all pages -- footer*/
+
+.clearRight {
+    clear:right; /*keeps footer centered below both columns. ref: p.222*/
+}
+footer {
+    background-color:#2E472E;
+    background-image: linear-gradient(to right, #2E472E, #2E2E47);
+    font-style: italic;
+    font-size: 75%;
+    text-align: center;
+    padding: 1em;    
+    margin:0;
+    /*overflow:auto;*/
+    /*margin-right: 800px;*/ /*originally wanted it centered under text content as with pacific trails, but since my columns are much more even, I think this looks better to have it  mirror the header and nav on top*/
+    /*width:100%;*/
+    color: #e4cbd2;
+}
+footer a {
+    color: #e4cbd2;
+}
+.button {
+    margin-bottom: 0; /*both footer and button having a bottom margin makes the footer look weirdly tall*/
+}
+
+/*home page*/
+
+ul {
+    list-style-image: url(hand.png);
+    padding-left: 5em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.listHeading {
+    color: #472E2E;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size:1.15em;
+}
+
+/*tours page*/
+
+table {
+    margin: auto;
+    border: none;
+    color: #e4cbd2;
+    background-color: #2E472E;
+    background-image: linear-gradient(to right, #2E472E, #2E2E47);
+    border-spacing: 0;
+    text-align:center;
+    
+}
+
+td, th {
+    border: 1px solid #efe8e2;
+    padding: 10px;
+}
+
+th {
+    font-family: Georgia, "Times New Roman", serif;
+    border-bottom: 3px solid #efe8e2;
+    font-size:1em;
+}
+
+td {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*form page*/
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 200px;
+    padding-right: 10px;
+}
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+select {
+    display: block;
+    margin-bottom: 20px;
+}
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    margin-left:140px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Timetastic Tours</title>
+        <meta charset="utf-8">
+        <!--header font import. copied from google fonts per textbook instructions in chapter 5 on page 157.-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <!--end of copy and pasted code-->
+        <link rel="stylesheet" href="time.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Timetastic Tours</h1>
+        </header>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="tours.html">Available Tours</a>
+                <a href="form.html">Contact</a>
+        </nav>
+        <main>
+            <!--right column-->
+            <div id="gallery">
+                <figure>
+                <a href="timeroverbig.jpg"><img src="timerover.jpg" alt="a timerover in the shape of a midcentury bus flying through a wormhole" height="225" width="300"></a>
+                <figcaption>One of our time rovers returning from a trip.</figcaption>
+                </figure>
+                <figure>
+                    <a href="customersbig.jpg"><img src="customerssmall.jpg" alt="a group of customers in early modern dress" height="225" width="300"></a>
+                    <figcaption>Customers awaiting their trip.</figcaption>
+                </figure>
+                <figure>
+                    <a href="lessonbig.jpg"><img src="lessonsmall.jpg" alt="a group of customers watching an instructor demonstrate how to sit in a hoop dress" height="225" width="300"> </a>
+                    <figcaption>Customers receiving a pre-trip lesson.</figcaption>
+                </figure>
+                <figure>
+                    <a href="certificatebig.png"><img src="certificatesmall.png" alt="a time travel authorization certificate" height="225" width="300"></a>
+                    <figcaption>Our ATTP certificate.</figcaption>
+                </figure>
+            </div>
+            <!--left column-->
+            <article>
+                <h3>Contact Us</h3>
+                    <p>Required fields are marked with an asterisk *</p>
+                    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                        <label for="myFName">* First Name:</label>
+                            <input type="text" id="myFName" name="myFName" required="required">
+                        <label for="myLName">* Last Name:</label>
+                            <input type="text" id="myLName" name="myLName" required="required">
+                        <label for="myEmail">* E-mail:</label>
+                            <input type="email" id="myEmail" name="myEmail" required="required">
+                        <label for="org">Organization:</label>
+                            <input type="text" id="org" name="org">
+                        <label for="myPhone">Phone:</label>
+                            <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+                        <label for="noTravelers">Number of Travelers:</label>
+                            <input type="number" id="noTravelers" name="noTravelers" min="1" max="10">
+                        <label for="tour">Tour ID:</label>
+                            <select size="1" name="tour" id="tour">
+                                <option>None</option>
+                                <option value="3671">3671</option>
+                                <option value="8871">8871</option>
+                                <option value="5675">5675</option>
+                                <option value="1110">1110</option>
+                            </select>
+                        <label for="month">Prefered departure month:</label>
+                            <select size="1" name="month" id="month">
+                                <option>Select a month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        <label for="year">Preferred departure year:</label>
+                            <input type="number" id="year" name="year" min="2055" max="2070">
+                        <label for="myComments">Comments, requests:</label>
+                            <textarea id="myComments" name="myComments" rows="5" cols="50"></textarea>
+                        <input type="submit">
+                    </form>
+            </article>
+        </main>
+        <br class="clearRight">
+        <footer>
+                Copyright &copy; 2055 Timetastic Tours<br>
+                <a href="mailto:contact@timetastic-tours.com">contact@timetastic-tours.com</a>
+                <!--Button from the W3 CSS validation page that they suggest adding to your validated site. I changed the link to lead to the main validation page, as the original link lead to an error. added button class.-->
+                <p class="button">
+                    <a href="https://jigsaw.w3.org/css-validator/">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss"
+                            alt="Valid CSS!">
+                    </a>
+                </p>
+                <!--end of copy and pasted code-->
+        </footer>
+    </body>
+
+</html>
